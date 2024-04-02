@@ -1,0 +1,478 @@
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: normal;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+/*Below is the css code for the header*/
+.curtinlogo {
+    padding-top: 18px;
+    padding-left: 18px;
+    width: 90px;
+    font-size: 16px;
+    position: sticky;
+}
+
+.site-identity h2 {
+    font-size: 1.5em;
+    margin: 0.6em 0;
+    display: inline-block;
+    padding-top: 5px;
+}
+
+.site-identity a{
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+}
+
+.site-identity a:hover{
+    color: #c90;
+}
+
+.headernavigation a{
+    text-decoration: none;
+    color: black;
+}
+
+.headernavigation a:hover {
+    color: #c90;
+}
+
+.siteheadertop{
+    border-bottom: 3.5px solid #c90;
+    padding: 0.1em 1em; /*THIS LINE HERE WILL BASICALLY REDUCE THE SIZE/WIDTH OF THE HEADER*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.siteheader{
+    padding: 0.05em 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headernavigation ul, li{
+    margin: 0;
+    padding: 0;
+}
+
+.headernavigation li {
+    display: inline-block;
+    margin: 1.4em 1em 1em 1em;
+}
+
+.siteheader{
+    background: #0088ca;
+}
+
+/*BELOW IS THE CSS FOR EDITING THE WEBSITE'S FOOTER*/
+footer{
+    position: relative;
+    bottom: 0;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: #0088ca;
+}
+
+.footercontainer{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); /*this code will make the footer wrap when minimised*/
+    padding: 3rem;
+    color: whitesmoke;
+}
+
+.footercontainer .section{
+    flex-basis: 50%;
+    padding: 0 20px;
+}
+
+/*this css code is duplicate to the above on because the class name of this section is 
+different to the other section*/
+.footercontainer .leftsection{
+    flex-basis: 50%;
+    padding: 0 20px;
+}
+
+.leftsection h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/*this code below is being used to edit the center and right section of the footer*/
+.section h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.section .content{
+    margin:20px 0 0 0;
+    position: relative;
+}
+
+.section .content::before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+}
+
+.section .content::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background-color: #c90;
+    top: -10px;
+}
+
+/*below i am editing the SMALL ORANGE BAR for the leftmost content
+''ABOUT US*/
+
+.leftsection .content{
+    margin:20px 0 0 0;
+    position: relative;
+}
+
+.leftsection .content::before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+}
+
+.leftsection .content::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background-color: #c90;
+    top: -10px;
+}
+
+/*end of editing small orange bar for leftmost content*/
+
+
+.leftsection .content .social{
+    margin: 20px 0 0 0;
+}
+
+/**/below we are editing the SOCIAL media logos
+.leftsection .content .social a{
+    padding: 0 5px;
+}
+
+.leftsection .content .social a span{
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 50px;
+    transition: 0.4s;
+    border:1px solid #656565;
+}
+
+.leftsection .content .social a span:hover{
+    background: #c90;
+}
+
+
+.center .content .fas{
+    font-size: 1.1rem;
+    background: transparent;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+    border:1px solid #656565;
+}
+
+.center .content .fas:hover{
+    background: #c90;
+    border:1px solid #c90;
+}
+
+.center .content .text{
+    font-size: 1.0.6rem;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.center .content .phone{
+    margin: 15px 0;
+}
+
+.footerbottom span{
+    text-align: center;
+   /* color: #656565;*/
+    color:white;
+}
+/*here end the CSS code for the footer*/
+
+
+
+/*********/
+/*Below is the css code for the mian content of the page*/
+.pageContainer{
+    background-color: white;
+    /*height:fit-content;*/
+}
+
+.pageTitle{
+    padding-left: 8px;
+}
+
+/*CSS for the student header*/
+.firstContainer h3{
+    padding-top: 30px;
+    padding-bottom: -20px ;
+    padding-left: 130px;
+}
+
+/*This is the css for the container of all the things in the first box*/
+.firstContainer{
+    background-color: whitesmoke;
+    color: black;
+}
+
+/*This is the css for the container holding the 2 small boxes*/
+.boxContainer{
+    padding: 2rem 8rem;
+    display: grid;
+    grid-gap: 90px;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+}
+
+/*This is the css for the 2 small boxes*/
+.box{
+    background-color: #a8dff1; /*this is for the light blue color*/
+    text-align: center;
+    padding: 5rem 1rem; /*Height and width here*/
+    border-radius: 8px;
+}
+
+/*This here will be used to change the font size of the text in the box*/
+.box p{
+    font-size: 50px;
+}
+
+/*Select box css below*/
+/*Below i am styling the selectbox*/
+.dropSelect{
+    padding-left: 130px;
+}
+
+select{
+    width: 220px;
+    height: 25px;
+    border-radius:5px;
+}
+
+.custom-select{
+    padding-left: 5px;
+}
+
+
+select:focus{
+    outline:none;
+}
+
+/*Below here i am editing the 2nd row of boxes*/
+.thirdContainer{
+    background-color: whitesmoke;
+    padding: 1px; /*This has been used to remove the whithe space between the 2 containers of the page*/;
+    padding-bottom: 40px;
+}
+
+.thirdContainer h3{
+    padding-left: 130px;
+}
+
+.row{
+    padding: 0 15px;
+}
+
+/*this is the media tag for the RESPONSIVENESS of the columns*/
+@media (min-width: 200px) {
+    .columns{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+        text-align: center;
+    }
+}
+
+.columns h4{
+    font-weight: normal;
+    color: white;
+}
+
+.containerh4{
+    text-align: center;
+    background-color: #0088ca;
+    border-radius: 4px;
+    height: 25px;
+    width: 190px;
+    color: white;
+}
+
+.column{
+    display: flex;
+    justify-content: center;
+}
+
+/*Below i am editing the second container for the page*/
+.secondContainer{
+    background-color: whitesmoke;
+    padding: 1px;
+    padding-bottom: 15px;
+    /*height: 260px;*/
+}
+
+.boxContainerTwo{
+    padding-top: 30px;
+}
+
+.secondContainer h3{
+    padding-left: 130px;
+}
+
+
+
+/*Below i am editin the numeric up/down*/
+.numericUpDown{
+    width: 170px;
+    height: 19px;
+    border-radius: 4px;
+}
+
+/*below is the css code for editing the column for the traits sipaki*/
+.containerRadio {
+    display: block;
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Hide the default radio button */
+.containerRadio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+  
+  /* custom radio button */
+.check {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 12px;
+    width: 12px;
+    background-color: lightgray;
+    border-radius: 50%;
+}
+
+.containerRadio:hover input ~ .check {
+    background-color: gray;
+}
+  
+.containerRadio input:checked ~ .check {
+    background-color: blue;
+}
+
+.check:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.containeRadio input:checked ~ .check:after {
+    display: block;
+}
+
+.containerRadio .check:after {
+    top: 8px;
+    left: 8px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: white;
+}
+
+/*Below is the css for the last big box for the generate excel file*/
+.lastBoxContainer{
+    padding: 2rem 8rem;
+    display: grid;
+    grid-gap: 90px;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+}
+
+.lastBox{
+    background-color: #a8dff1; /*this is for the light blue color*/
+    text-align: center;
+    padding: 10rem 1rem; /*Height and width here*/
+    border-radius: 8px;
+}
+
+.pageTitle h2{
+    padding-left: 7px;
+}
+
+/*Below i am styling the button for creating groups*/
+.button {
+    background-color: #0088ca;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.5s;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.buttonContainer{
+    padding-top: 55px;
+}

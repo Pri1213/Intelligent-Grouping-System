@@ -1,0 +1,1 @@
+alert("The ratio is tadaaa:" + ratio)

@@ -1,0 +1,377 @@
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: normal;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+/*bELOW IS THE CODE FOR RESPONSIVE SCREENS*/
+/*
+@media only screen and (min-width: 200px) {
+    .pageContainer {
+      grid-template-columns: 2fr;
+      grid-template-areas:
+      "sidebar"
+      "maincontent";
+    }
+}*/
+
+/*Here is the css code for whole page*/
+.pageContainer{
+    display: grid;
+    grid-gap: 1.5px;
+    grid-template-columns: 0.8fr 2fr;
+}
+
+/*This is the css code for the SIDEBAR*/
+.sideBar{
+    background: whitesmoke; 
+    padding: 15px;
+}
+
+.sideBar h1{
+    text-align: center;
+    font-size: 20px;
+    color: aliceblue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: normal;
+    padding-top: 12px;
+    color: black;
+}
+
+/*This is the css code for the MAIN CONTENT - name 'OVERVIEW'*/
+.mainContent{
+    background-color: whitesmoke;
+    padding: 15px;
+    padding-left: 40px;
+    padding-bottom: 120px; /*This line here will be styling the overall height of the whole page*/
+}
+
+.mainContent h1{
+    font-size: 28px;
+    color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: normal;
+}
+
+/*Here i am styling the 2 boxes in the main content section of the page*/
+/*Below is the code for styling the 2 boxes if the main content*/
+.boxes{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    padding-bottom: 40px;
+}
+
+
+
+/*Below is the styling for the big box containing the 3 boxes for total number of users etc*/
+.box2{
+    /*Below is the styling for the background of the big box*/
+    background: white;  
+    color: white;
+    text-align: center;
+    padding: 3rem 3rem; /*This line here will be positioning the small boxes in the big box*/
+    border-radius: 8px;
+
+    /*Below is the styling for the big box containing the 3 boxes*/
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    padding-bottom: 40px;
+    box-shadow: 0 0 2px rgb(192, 199, 227);
+}
+
+/*Below i am styling the 3 small boxes for the big box*/
+.smallBox{
+    background-color: #a8dff1; /*this is for the light blue color*/
+    /*background: #0088ca;*/ /*This is for the bold blue color*/
+    text-align: center;
+    padding: 3rem 4rem;
+    border-radius: 8px;
+    box-shadow: 0 0 2px rgb(192, 199, 227);
+}
+
+.box1{
+    overflow:auto;
+    height:400px ;
+    width: 450px;
+}
+/*******/
+/*Below i am styling the dropdown box*/
+
+/*Below i am styling the button in the sidebar of the webpage*/
+.buttonContainer{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.button{
+    background-color: rgb(206, 163, 33); 
+    border: white;
+    border-radius: 15px;
+    font-size: 15px;
+    width: 320px;
+    height: 45px;
+    padding: 0.5em 5em; /*This code here will specify the size of the box*/
+    transition: all 250ms;
+    touch-action: manipulation;
+}
+
+.containerButtons{
+    padding-top: 85px;
+    padding-bottom: 50px;
+}
+
+
+.button:hover {
+  box-shadow: 0 0 20px rgb(239, 240, 249);
+  transform: scale(1.05);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/*                                          
+ #####   ###    ###   #####  #####  ####  
+ #      #   #  #   #    #    #      #   # 
+ #      #   #  #   #    #    #      #   # 
+ ####   #   #  #   #    #    ####   ####  
+ #      #   #  #   #    #    #      # #   
+ #      #   #  #   #    #    #      #  #  
+ #       ###    ###     #    #####  #   # 
+*/
+/*Below is my CSS code for the footer*/
+footer{
+    position: relative;
+    bottom: 0;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: #0088ca;
+}
+
+.footercontainer{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); /*this code will make the footer wrap when minimised*/
+    padding: 3rem;
+    color: whitesmoke;
+}
+
+.footercontainer .section{
+    flex-basis: 50%;
+    padding: 0 20px;
+}
+
+/*this css code is duplicate to the above on because the class name of this section is 
+different to the other section*/
+.footercontainer .leftsection{
+    flex-basis: 50%;
+    padding: 0 20px;
+}
+
+.leftsection h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/*this code below is being used to edit the center and right section of the footer*/
+.section h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.section .content{
+    margin:20px 0 0 0;
+    position: relative;
+}
+
+.section .content::before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+}
+
+.section .content::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background-color: #c90;
+    top: -10px;
+}
+
+/*below i am editing the SMALL ORANGE BAR for the leftmost content
+''ABOUT US*/
+
+.leftsection .content{
+    margin:20px 0 0 0;
+    position: relative;
+}
+
+.leftsection .content::before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+}
+
+.leftsection .content::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background-color: #c90;
+    top: -10px;
+}
+
+/*end of editing small orange bar for leftmost content*/
+
+
+.leftsection .content .social{
+    margin: 20px 0 0 0;
+}
+
+/**/below we are editing the SOCIAL media logos
+.leftsection .content .social a{
+    padding: 0 5px;
+}
+
+.leftsection .content .social a span{
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 50px;
+    transition: 0.4s;
+    border:1px solid #656565;
+}
+
+.leftsection .content .social a span:hover{
+    background: #c90;
+}
+
+
+.center .content .fas{
+    font-size: 1.1rem;
+    background: transparent;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+    border:1px solid #656565;
+}
+
+.center .content .fas:hover{
+    background: #c90;
+    border:1px solid #c90;
+}
+
+.center .content .text{
+    font-size: 1.0.6rem;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.center .content .phone{
+    margin: 15px 0;
+}
+
+.footerbottom span{
+    text-align: center;
+   /* color: #656565;*/
+    color:white;
+}
+/*here end the CSS code for the footer*/
+
+/*                                          
+ #  #   ####     #    ###    ####   ###   
+ #  #   #       # #   #  #   #      #  #  
+ ####   ###    #   #  #  #   ###    #  #  
+ #  #   #      #####  #  #   #      ###   
+ #  #   #      #   #  #  #   #      #  #  
+ #  #   ####   #   #  ###    ####   #  #  
+*/
+/*Below is my code for the header of the webpage*/
+.curtinlogo {
+    padding-top: 18px;
+    padding-left: 18px;
+    width: 110px;
+    font-size: 16px;
+    position: sticky;
+}
+.site-identity h2 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5em;
+    margin: 0.6em 0;
+    display: inline-block;
+    padding-top: 5px;
+}
+
+.site-identity a{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+}
+
+.site-identity a:hover{
+    color: #c90;
+}
+
+.headernavigation a{
+    text-decoration: none;
+    color: black;
+}
+
+.headernavigation a:hover {
+    color: #c90;
+}
+
+.siteheadertop{
+    border-bottom: 3.5px solid #c90;
+    padding: 0.1em 1em; /*THIS LINE HERE WILL BASICALLY REDUCE THE SIZE/WIDTH OF THE HEADER*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.siteheader{
+    border-bottom: 0px solid #c90;
+    padding: 0.05em 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headernavigation ul, li{
+    margin: 0;
+    padding: 0;
+}
+
+.headernavigation li {
+    display: inline-block;
+    margin: 1.4em 1em 1em 1em;
+}
+
+.headernavigation .logout::before{
+    content: " | ";
+}
+
+.siteheader{
+    /*background: #053742;*/
+    background: #0088ca;
+}
+
+
+

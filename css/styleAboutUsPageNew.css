@@ -1,0 +1,309 @@
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: normal;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+/*Below is the css code for the header*/
+.curtinlogo {
+    padding-top: 18px;
+    padding-left: 18px;
+    width: 110px;
+    font-size: 16px;
+    position: sticky;
+}
+.site-identity h2 {
+    font-size: 1.5em;
+    margin: 0.6em 0;
+    display: inline-block;
+    padding-top: 5px;
+}
+
+.site-identity a{
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+}
+
+.site-identity a:hover{
+    color: #c90;
+}
+
+.headernavigation a{
+    text-decoration: none;
+    color: black;
+}
+
+.headernavigation a:hover {
+    color: #c90;
+}
+
+.siteheadertop{
+    border-bottom: 3.5px solid #c90;
+    padding: 0.1em 1em; /*THIS LINE HERE WILL BASICALLY REDUCE THE SIZE/WIDTH OF THE HEADER*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.siteheader{
+    padding: 0.05em 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headernavigation ul, li{
+    margin: 0;
+    padding: 0;
+}
+
+.headernavigation li {
+    display: inline-block;
+    margin: 1.4em 1em 1em 1em;
+}
+
+.siteheader{
+    background: #0088ca;
+}
+
+/*BELOW IS THE CSS FOR EDITIN THE WEBSITE'S FOOTER*/
+footer{
+    position: relative;
+    bottom: 0;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: #0088ca;
+}
+
+.footercontainer{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); /*this code will make the footer wrap when minimised*/
+    padding: 3rem;
+    color: whitesmoke;
+}
+
+.footercontainer .section{
+    flex-basis: 50%;
+    padding: 0 20px;
+}
+
+/*this css code is duplicate to the above on because the class name of this section is 
+different to the other section*/
+.footercontainer .leftsection{
+    flex-basis: 50%;
+    padding: 0 20px;
+}
+
+.leftsection h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/*this code below is being used to edit the center and right section of the footer*/
+.section h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.section .content{
+    margin:20px 0 0 0;
+    position: relative;
+}
+
+.section .content::before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+}
+
+.section .content::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background-color: #c90;
+    top: -10px;
+}
+
+/*below i am editing the SMALL ORANGE BAR for the leftmost content
+''ABOUT US*/
+
+.leftsection .content{
+    margin:20px 0 0 0;
+    position: relative;
+}
+
+.leftsection .content::before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+}
+
+.leftsection .content::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background-color: #c90;
+    top: -10px;
+}
+
+/*end of editing small orange bar for leftmost content*/
+
+
+.leftsection .content .social{
+    margin: 20px 0 0 0;
+}
+
+/**/below we are editing the SOCIAL media logos
+.leftsection .content .social a{
+    padding: 0 5px;
+}
+
+.leftsection .content .social a span{
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 50px;
+    transition: 0.4s;
+    border:1px solid #656565;
+}
+
+.leftsection .content .social a span:hover{
+    background: #c90;
+}
+
+
+.center .content .fas{
+    font-size: 1.1rem;
+    background: transparent;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+    border:1px solid #656565;
+}
+
+.center .content .fas:hover{
+    background: #c90;
+    border:1px solid #c90;
+}
+
+.center .content .text{
+    font-size: 1.0.6rem;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.center .content .phone{
+    margin: 15px 0;
+}
+
+.footerbottom span{
+    text-align: center;
+   /* color: #656565;*/
+    color:white;
+}
+
+/*BELOW IS THE CODE FOR STYLING TH CSS OF THE CONTENT*/
+.heading {
+    width:90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.heading h1{
+    font-size: 60px;
+    color: #000;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.heading h1:after{
+    content: "";
+    position: absolute;
+    width:100%;
+    height: 4px;
+    display: block;
+    margin:0 auto;
+    background-color: #c90;
+}
+
+.heading p{
+    font-size: 27px;
+    color:black;
+    margin-bottom: 60px;
+}
+
+/*This span is conflicting with my footer*/
+
+/*Mone comment li, mo pas koner kifer tone met sa 'span tag la'*/
+/*
+span{
+    color: #0088ca;
+}*/
+
+.container {
+    width: 90%;
+    margin:0 auto;
+    padding:10px 20px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    flex:1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+
+.about-image img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.about-image:hover img{
+    transform: scale(1.2);
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-content h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: black;
+}
+.about-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+}

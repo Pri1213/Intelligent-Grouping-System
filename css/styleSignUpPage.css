@@ -1,0 +1,367 @@
+body
+{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    background-color: #F2F3F2;
+    font-family: SansaSoft,Calibri,sans-serif;
+   /* background-image: url('https://www.wondriumdaily.com/wp-content/uploads/2020/08/Mysteries-of-Human-Behavior_Why-and-How-Do-People-Form-Groups_QBS_Article_1.jpg');*/
+    /*background-repeat: no-repeat;
+    background-size: contain;*/
+}
+
+/*Below is the css code for the header*/
+.curtinlogo {
+    padding-top: 18px;
+    padding-left: 18px;
+    width: 110px;
+    font-size: 16px;
+    position: sticky;
+}
+
+.site-identity h2 {
+    font-size: 1.5em;
+    margin: 0.6em 0;
+    display: inline-block;
+    padding-top: 5px;
+}
+
+.site-identity a{
+    text-decoration: none;
+    color: white;
+}
+
+.site-identity a:hover{
+    color: #c90;
+}
+
+.headernavigation a{
+    text-decoration: none;
+    color: black;
+}
+
+.headernavigation a:hover {
+    color: #c90;
+}
+
+.siteheadertop{
+    border-bottom: 3.5px solid #c90;
+    padding: 0.1em 1em; /*THIS LINE HERE WILL BASICALLY REDUCE THE SIZE/WIDTH OF THE HEADER*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.siteheader{
+    border-bottom: 1px solid #c90;
+    padding: 0.05em 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headernavigation ul, li{
+    margin: 0;
+    padding: 0;
+}
+
+.headernavigation li {
+    display: inline-block;
+    margin: 1.4em 1em 1em 1em;
+}
+
+.siteheader{
+    /*background: #053742;*/
+    background: #0088ca;
+}
+
+/*BELOW IS THE CSS FOR EDITIN THE WEBSITE'S FOOTER*/
+footer{
+    position: relative;
+    bottom: 0px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: #0088ca;
+}
+
+.footercontainer{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); /*this code will make the footer wrap when minimised*/
+    padding: 3rem;
+    color: whitesmoke;
+}
+
+.footercontainer .section{
+    flex-basis: 50%;
+    padding: 0 20px;
+}
+
+/*this css code is duplicate to the above on because the class name of this section is 
+different to the other section*/
+.footercontainer .leftsection{
+    flex-basis: 50%;
+    padding: 0 20px;
+}
+
+.leftsection h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/*this code below is being used to edit the center and right section of the footer*/
+.section h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.section .content{
+    margin:20px 0 0 0;
+    position: relative;
+}
+
+.section .content::before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+}
+
+.section .content::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background-color: #c90;
+    top: -10px;
+}
+
+/*below i am editing the SMALL ORANGE BAR for the leftmost content
+''ABOUT US*/
+
+.leftsection .content{
+    margin:20px 0 0 0;
+    position: relative;
+}
+
+.leftsection .content::before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+}
+
+.leftsection .content::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background-color: #c90;
+    top: -10px;
+}
+
+/*end of editing small orange bar for leftmost content*/
+
+
+.leftsection .content .social{
+    margin: 20px 0 0 0;
+}
+
+/**/below we are editing the SOCIAL media logos
+.leftsection .content .social a{
+    padding: 0 5px;
+}
+
+.leftsection .content .social a span{
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 50px;
+    transition: 0.4s;
+    border:1px solid #656565;
+}
+
+.leftsection .content .social a span:hover{
+    background: #c90;
+}
+
+
+.center .content .fas{
+    font-size: 1.1rem;
+    background: transparent;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+    border:1px solid #656565;
+}
+
+.center .content .fas:hover{
+    background: #c90;
+    border:1px solid #c90;
+}
+
+.center .content .text{
+    font-size: 1.0.6rem;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.center .content .phone{
+    margin: 15px 0;
+}
+
+.footerbottom span{
+    text-align: center;
+   /* color: #656565;*/
+    color:white;
+}
+/*here end the CSS code for the footer*/
+
+/********/
+/*Below is the CSS code for the sign up form*/
+.form_wrapper {
+	background: #fff;
+	width: 530px;
+	max-width: 100%;
+	box-sizing: border-box;
+	padding: 22px;
+	margin: 8% auto 0;
+	position: relative;
+	z-index: 1;	
+    border-radius: 10px;
+}
+
+.title_container h1,h3{
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: normal;
+}
+
+.formgroup{
+    margin-bottom: 1px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*BELOW I AM EDITING THE APPEARANCE OF THE TEXT BOXES*/
+input[type="text"].formcontrol, input[type="password"].formcontrol, input[type="email"].formcontrol{
+    font-size: 15px;
+    outline: none;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 2px;
+    transition:all 0.3s ease;
+}
+
+/*Below is the code for when hovering over the text boxes*/
+input[type="text"].formcontrol:hover, input[type="password"].formcontrol:hover, input[type="email"].formcontrol:hover{
+    border:1px solid #dd5f24
+}
+
+input[type="text"].formcontrol:focus, input[type="password"].formcontrol:focus, input[type="email"].formcontrol:hover{
+    border:1px solid #dd5f24
+}
+
+input[type="text"].formcontrol:active, input[type="password"].formcontrol:active, input[type="email"].formcontrol:hover{
+    border:1px solid #dd5f24
+}
+
+.formgroup label{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.button{
+    outline: none;
+    background: #c90;
+    color: #fff;
+    padding: 16px;
+    display: block;
+    width: 100%;
+    border:none;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover{
+    box-shadow: 5px 5px 5px #ccc;
+}
+
+.usericon{
+    background: #c90;
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -50px;
+    left: 220px;
+}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+
+}
+
+@-webkit-keyframes check {
+  0% { height: 0; width: 0; }
+  25% { height: 0; width: 7px; }
+  50% { height: 20px; width: 7px; }
+}
+
+@keyframes check {
+  0% { height: 0; width: 0; }
+  25% { height: 0; width: 7px; }
+  50% { height: 20px; width: 7px; }
+}
+
+@-webkit-keyframes expand { 
+	0% { -webkit-transform: scale3d(1,0,1); opacity:0; }
+	25% { -webkit-transform: scale3d(1,1.2,1); }
+	50% { -webkit-transform: scale3d(1,0.85,1); }
+	75% { -webkit-transform: scale3d(1,1.05,1); }
+	100% { -webkit-transform: scale3d(1,1,1);  opacity:1; }
+}
+
+@keyframes expand { 
+	0% { -webkit-transform: scale3d(1,0,1); transform: scale3d(1,0,1);  opacity:0; }
+	25% { -webkit-transform: scale3d(1,1.2,1); transform: scale3d(1,1.2,1); }
+	50% { -webkit-transform: scale3d(1,0.85,1); transform: scale3d(1,0.85,1); }
+	75% { -webkit-transform: scale3d(1,1.05,1); transform: scale3d(1,1.05,1); }
+	100% { -webkit-transform: scale3d(1,1,1); transform: scale3d(1,1,1);  opacity:1; }
+}
+
+
+@-webkit-keyframes bounce { 
+	0% { -webkit-transform: translate3d(0,-25px,0); opacity:0; }
+	25% { -webkit-transform: translate3d(0,10px,0); }
+	50% { -webkit-transform: translate3d(0,-6px,0); }
+	75% { -webkit-transform: translate3d(0,2px,0); }
+	100% { -webkit-transform: translate3d(0,0,0); opacity: 1; }
+}
+
+@keyframes bounce { 
+	0% { -webkit-transform: translate3d(0,-25px,0); transform: translate3d(0,-25px,0); opacity:0; }
+	25% { -webkit-transform: translate3d(0,10px,0); transform: translate3d(0,10px,0); }
+	50% { -webkit-transform: translate3d(0,-6px,0); transform: translate3d(0,-6px,0); }
+	75% { -webkit-transform: translate3d(0,2px,0); transform: translate3d(0,2px,0); }
+	100% { -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0); opacity: 1; }
+}
