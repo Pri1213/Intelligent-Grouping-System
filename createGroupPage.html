@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Create Group</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    
+    <meta name="author" content="Gregory Grenouille /ID - 20384658">
+    <meta name="description" content="WEB APPLICATION FOR FORMING STUDENT GROUPS">
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/styleCreateGroupPage.css">
+</head>
+
+<body>
+    <!--Below I will add a header for the login page-->
+    <!--Below is the header containing the curtinlogo-->
+    <header class="siteheadertop">
+        <div class="site-identity2">
+            <div class="logo">
+                <img class="curtinlogo" src="images/CTCLOGO.png">
+            </div>
+        </div>
+
+        <nav class="headernavigation">
+            <ul>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="#">Log Out</a></li>
+            </ul>
+        </nav>
+
+    </header> <!--This is the end of the top most header-->
+
+    <!--This is the second header containing the name of the website-->
+    <header class="siteheader">
+        <div class="site-identity">
+            <h3><a href="#">Intelligent Student Grouping System</a></h3>
+        </div>
+    </header>
+
+    <!--Main content below-->
+    <!--Below is the codes for the main content of the page-->
+    <div class="pageContainer">
+
+        <div class="pageTitle"> <!--This will basically holds the container for the page-->
+            <h2>Hello there</h2>
+        </div>
+
+        <!--Below ia the container for the first box-->
+        <div class="firstContainer">
+            <h3>Students</h3>
+
+            <div class="groupDropDown">
+                <div class="dropSelect">
+                    <select name="language" id="language">
+                        <option value="" >Select module</option>
+                        <option value="1">Business Web and Mobile Tech</option>
+                        <option value="2">Fundamentals of Programming</option>
+                        <option value="3">Capstone</option>
+                        <option value="4">Advanced Business Technologies</option>
+                        <option value="5">Internship</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="boxContainer">
+                <section>
+                    <p>Total number of students:</p>
+                    <div class="box">
+                        <P>23</P>
+                    </div>
+                </section>
+    
+                <section>
+                    <p>Student List:</p>
+                    <div class="box">
+                        <P>List of students</P>
+                    </div>
+                </section>
+            </div>
+        </div><!--End of 1st container-->
+
+        <hr>
+
+        <div class="secondContainer">
+            <h3>Create groups</h3>
+            <div class="boxContainerTwo">
+                <!--Below i will be separating the box in 3 different section-->
+                <div class="columns">
+                    <!--1st column-->
+                    <div class="column">
+                        <div class="row">
+                            <div class="containerh4">
+                                <label class="labelBox2"> Number of students:</label>
+                            </div><br><br>
+                            <input class="numericUpDown" type="number" id="quantity" name="quantity" min="1" max="80">
+                        </div>
+                    </div>
+
+                    <!--2nd column-->
+                    <div class="column">
+                        <div class="row">
+                            <div class="containerh4">
+                                <label class="labelBox2"> Number of groups:</label>
+                            </div><br><br>
+                            <input class="numericUpDown" type="number" id="quantity" name="quantity" min="1" max="10">
+                        </div>
+                    </div>
+
+                    <!--3rd column-->
+                    <div class="column">
+                        <div class="row">
+                            <div class="containerh4">
+                                <label class="labelBox2"> Group Size:</label>
+                            </div><br><br>
+                            <input class="numericUpDown" type="number" id="quantity" name="size_groups" min="1" max="10">
+                        </div>
+                    </div>
+
+                    <!--4rd column-->
+                    <div class="column">
+                        <div class="row">
+                            <div class="containerh4">
+                                <label class="labelBox2"> Group Type:</label><br><br>
+                            </div><br>
+
+                            <label class="containerRadio">Similar
+                                <input type="radio" name="radio" checked>  
+                                <span class="check"></span>  
+                            </label>  
+                              
+                            <label class="containerRadio">Dissimilar  
+                                <input type="radio" name="radio">  
+                                <span class="check"></span>  
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="column">
+                        <div class="buttonContainer">
+                            <button class="button"><span>Create Groups</span></button>
+                        </div>
+                    </div>
+                    
+                </div><br><br> <!--End of the div 'columns'-->
+            </div><!--End of the container-->
+        </div><!--End of 2nd container-->
+
+        <hr>
+
+        <div class="thirdContainer">
+            <h3>Generate excel file</h3>
+            <div class="lastBoxContainer">
+                <div class="lastBox">
+                    <p>This is the last box</p>
+                </div>
+            </div>
+        </div><!--End of third Container-->  
+    </div>
+
+    <!--FOOTER BELOW-->
+    <!--This class below is the main footer which will contain subfooters-->
+    <footer>
+        <div class="footercontainer">
+            <div class="leftsection">
+                <h2>About Us</h2>
+                <div class="content">
+                    <p>Web Application developped to ease the life of lecturers when making students groups</p>
+                    <div class="social">
+                        <a href="https://www.facebook.com/CharlesTelfairCentre/"><span class="fab fa-facebook-f"></span></a>  
+                        <a href="https://www.instagram.com/curtin.mauritius/?hl=en"><span class="fab fa-instagram"></span></a>
+                        <a href="https://www.youtube.com/channel/UCt4BSgts3tDLnnhyD-tJGbQ"><span class="fab fa-youtube"></span></a>
+                    </div>
+                </div>
+            </div> <!--end of footer's left section-->
+
+            <div class="center section">
+                <h2>Contact Us</h2>
+                <div class="content">
+                    <div class="place">
+                        <span class="fas fa-map-marker-alt"></span>
+                        <span class="text">Moka, Mauritius</span>
+                    </div>
+
+                    <div class="phone">
+                        <span class="fas fa-phone-alt"></span>
+                        <span class="text">+230 4016526</span>
+                    </div>
+
+                    <div class="email">
+                        <span class="fas fa-envelope"></span>
+                        <span class="text"> ctcentre@telfair.ac.mu</span>
+                    </div>
+                </div>
+            </div><!--End of footer's center section-->
+
+            <div class="right section">
+                <h2>Teaching Areas</h2>
+                <div class="content">
+                    <ul>
+                        <li>Business and Law</li>
+                        <li>Health and Sciences</li>
+                        <li>Science and Engineering</li>
+                        <li>Humanities</li>
+                    </ul>
+                </div>
+            </div><!--end of footer's right section-->
+        </div>
+
+        <div class="footerbottom">
+            <div>
+                <span><p>© 2023 | All Rights Reserved | Developped by CTC Students</p></span>
+            </div>
+        </div><!--end of 'footer bottom' class-->
+    </footer>
+</body>
+</html>

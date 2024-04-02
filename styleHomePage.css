@@ -1,0 +1,844 @@
+/*
+Description: Contains the styling for Site Branding
+Author: Bhousika Bugwan
+Student ID: 20376684
+Email: bhousika.bugwan@student.curtin.edu
+Tags: Portfolio Website
+*/
+
+/* Theming */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@900&family=Poppins:ital,wght@0,200;0,500;0,900;1,100;1,200&display=swap'); /* import font */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #17202A;
+    --second-bg-color: bisque;
+    --text-color: #fff;
+    --second-color: #ccc;
+    --main-color: #c90;
+    --big-font: 3rem;
+    --h2-font: 2rem;
+    --p-font: 1rem;
+}
+
+body {
+    background-image: url('images/cti2.jpg');
+    color: var(--text-color);
+}
+
+
+/*Here is the css for the HEADER part of the website*/
+.header{
+    background-color: white;
+    
+}
+
+/*Here is the CSS content for the mainContent of the page*/
+
+
+span{
+    color: var(--main-color);
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+/* Header */
+.header{
+    background-color: var(--bg-color);
+    box-shadow: 1px 1px 2px 0px var(--main-color);
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+/* Logo */
+.logo{
+    display: inline-block;
+    color: var(--text-color);
+    font-size: 60px;
+    margin-left: 10px;
+}
+/* Nav menu */
+.nav{
+    width: 100%;
+    height: auto;
+    background-color: var(--bg-color);
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+
+.menu a{
+    display: block;
+    padding: 30px;
+    color: var(--text-color);
+    
+}
+
+.menu a:hover{
+    background-color: var(--main-color);
+}
+
+/* Menu Icon */
+.hamb{
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+}/* Style label tag */
+
+.hamb-line {
+    background: var(--text-color);
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+
+} /* Style span tag */
+
+.hamb-line::before,
+.hamb-line::after{
+    background: var(--text-color);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+.hamb-line::before{
+    top: 5px;
+}
+
+.hamb-line::after{
+    top: -5px;
+}
+
+.side-menu {
+    display: none;
+} /* Hide checkbox */
+
+/* Toggle menu icon */
+.side-menu:checked ~ nav{
+    max-height: 100%;
+}
+
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
+}
+
+.span {
+    background: var(--main-color);
+}
+
+/* home page css*/
+section{
+    padding: 80px 2%;
+}
+
+.home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 6rem;
+    align-items: center;
+}
+
+.home-img img{
+    max-width: 100%;
+    width: 40%;
+    height: 25rem;
+    border-radius: 10%;
+    margin-left: 8%;
+}
+
+.home-text{
+    margin-left: 15%;
+    margin-top: -40%;
+}
+
+.home-text h5{
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0 0 20px;
+    line-height: 1rem;
+}
+
+.home-text h1 {
+    font-size: var(--big-font);
+    color: var(--text-color);
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0 0 20px;
+    
+}
+
+.home-text h6 {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 29px;
+}
+
+.home-text p {
+    max-width: 470px;
+    font-size: var(--p-font);
+    font-weight: 600;
+    line-height: 22px;
+    margin-bottom: 15px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+i{
+    height: 30px;
+    width: 30px;
+    line-height: 10px;
+    font-size: 25px;
+    text-align: center;
+    background: #fff;
+    color: #F1948A;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.i:hover {
+    margin-left: 10px;
+}
+
+.btn:hover {
+    background: var(--second-color);
+    color: var(--main-color);
+    box-shadow:  4px 4px var(--main-color);
+}
+
+.social {
+    position: relative;
+    left:5px;
+    margin-left: -30px;
+    padding: 30px;
+}
+.social i {
+    height: 45px;
+    width: 45px;
+    background: var(--main-color);
+    color: var(--text-color);
+    font-size: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-right: 15px;
+    transition:  all .45s ease;
+}
+
+.social i:hover {
+    background: var(--text-color);
+    color: var(--second-color);
+}
+
+
+
+
+
+
+/*Greg CSS*/
+.staffPortal{
+    margin-right: 5%;
+    margin-top: -30%;
+}
+
+.login::after{
+    content: " | ";
+} 
+
+.here{
+    color: #c90;
+    text-decoration: underline;
+}
+
+/*here is the CSS for the hovering effect*/
+.staffPortal h2{
+    font-size: 27px;
+    font-weight: 600;
+    transition: 0.5s;
+    color:white;
+}
+.staffPortal h2 :hover{
+    font-size: 27px;
+    font-weight: 600;
+    transition: 0.5s;
+    color: rgb(255, 199, 33);
+}
+.staffPortal p {
+    font-size: var(--p-font);
+    font-weight: 600;
+    line-height: 22px;
+    margin-bottom: 15px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(99, 107, 56);
+    align-items: center;
+    border-radius: 8px;
+    position: relative;
+    margin-left: 23%;
+}
+
+.column2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(70, 121, 70);
+    align-items: center;
+    border-radius: 8px;
+    position: relative;
+    margin-left: 23%;
+}
+.column3 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(112, 52, 52);
+    align-items: center;
+    overflow: hidden;
+    border-radius: 8px;
+    position: relative;
+    margin-left: 23%;
+}
+.column1 p{
+    text-align: left;
+}
+
+.reflection span{
+    color: black;
+}
+/* Clear floats after the columns */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+/*reflection css ends*/
+
+/* Make the website responsive*/
+@media (max-width:450px){
+    *{
+        font-size: 50%;
+    }
+}
+
+/* Responsiveness nav*/
+@media (min-width: 1200px) {
+    .nav{
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        background-color: transparent;
+    }
+    .menu li{
+        float: left;
+    }
+    .menu a:hover{
+        background-color: transparent;
+        color: var(--main-color);
+
+    }
+
+    .hamb{
+        display: none;
+    }
+}
+
+@media (max-width: 1430px){
+   
+    section{
+        padding: 50px 3%;
+    }
+
+    :root {
+    --big-font: 3rem;
+    --h2-font: 1.2rem; 
+    }
+@media (max-width: 1020px){
+    :root {
+        --big-font: 3rem;
+        --h2-font: 1.2rem;
+        --p-font: 0.9rem;
+    }
+}
+
+  /*home page responsive*/
+  /* Styles for viewport width of 795px or less */
+@media (max-width: 795px) {
+    section {
+      padding: 60px 2%;
+    }
+  
+    .home {
+      grid-template-columns: 1fr;
+      grid-gap: 3rem;
+      height: auto;
+      padding-bottom: 50px;
+    }
+  
+    .home-img img {
+      height: auto;
+      margin-left: 2.5rem;
+      margin-bottom: 30px;
+      width: 70%;
+    }
+  
+    .home-text {
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .home-text h5 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  
+    .home-text h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+  
+    .home-text h6 {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  
+    .home-text p {
+      font-size: 16px;
+      line-height: 1.4;
+      margin-bottom: 20px;
+      max-width: 100%;
+    }
+  
+    .social {
+      left: auto;
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .social i {
+      margin-right: 10px;
+    }
+  }
+
+  /*about page responsive*/
+  @media (max-width: 795px) {
+    .row {
+      flex-direction: column;
+      margin-left: 0;
+    }
+  
+    .info-container {
+      flex: 1 1 100%;
+      margin-bottom: 1rem;
+    }
+  
+    .box1 {
+      flex: 1 1 100%;
+      margin-left: 0;
+      padding: 1rem;
+      border-left: none;
+      border-top: .1rem solid #ccc;
+    }
+  
+    .box1 i {
+      left: -2.2rem;
+      right: -1.9rem;
+      margin-top: 4%;
+    }
+  
+    .skills-container {
+      margin-right: 0;
+      margin-top: 2rem;
+    }
+  
+    .skills-container h2 {
+      margin-top: 0;
+    }
+  
+    .box2 {
+      flex: 1 1 100%;
+      margin-bottom: 2rem;
+    }
+  
+    .box3 {
+      flex: 1 1 100%;
+      margin-left: 0;
+      margin-top: 2rem;
+      padding: 1rem;
+      border-left: none;
+      border-top: .1rem solid #ccc;
+    }
+  
+    .box3 i {
+       left: -2.8rem;
+      right: -2.7rem;
+    }
+  }
+
+  @media (max-width: 1200px) {
+  
+    .skills-container {
+        margin-right: 0;
+        margin-top: 2rem;
+      }
+    
+      .skills-container h2 {
+        margin-top: 0;
+      }
+    
+      .box2 {
+        flex: 1 1 100%;
+        margin-bottom: 2rem;
+      }
+      
+  /*Project responsive*/
+@media (max-width: 795px) {
+.projects{
+    width: 90.5%;
+    margin: 0 auto;
+}
+
+.header1{
+    font-size: 3rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.projects-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.projects-content .row{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.projects-content .row img{
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.row:hover img{
+    transform: scale(1.1);
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.1), #F1948A);
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    transition: height 0.5s;
+}
+
+.layer h5{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.layer p{
+    color: black;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.layer i{
+    margin-top: 1rem;
+    font-size: 20px;
+    width: 140%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row:hover .layer{
+    height: 100%;
+}
+}
+}
+
+/*contact page responsive*/
+  /* Small screens */
+@media(max-width: 795px) {
+    .contact .row {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 1rem;
+    }
+    
+    .infoContainer {
+      width: 100%;
+    }
+    
+    .contact-form {
+      margin-left: 0;
+      margin-top: 0;
+    }
+    
+    .contact-form form {
+      width: 100%;
+    }
+  }
+}
+
+/*Footer's CSS below*/
+/*Below is my CSS code for the footer*/
+footer{
+    position: relative;
+    bottom: 0;
+    padding-bottom: 10px;
+    width: 100%;
+    background: var(--bg-color);
+}
+
+.footercontainer{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); /*this code will make the footer wrap when minimised*/
+    padding: 3rem;
+    color: whitesmoke;
+}
+
+.footercontainer .section{
+    flex-basis: 50%;
+    padding: 0 20px;
+}
+
+/*this css code is duplicate to the above on because the class name of this section is 
+different to the other section*/
+.footercontainer .leftsection{
+    flex-basis: 50%;
+    padding: 0 20px;
+}
+
+.leftsection h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/*this code below is being used to edit the center and right section of the footer*/
+.section h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.section .content{
+    margin:20px 0 0 0;
+    position: relative;
+}
+
+.section .content::before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+}
+
+.section .content::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background-color: #c90;
+    top: -10px;
+}
+
+/*below i am editing the SMALL ORANGE BAR for the leftmost content
+''ABOUT US*/
+
+.leftsection .content{
+    margin:20px 0 0 0;
+    position: relative;
+}
+
+.leftsection .content::before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+}
+
+.leftsection .content::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background-color: #c90;
+    top: -10px;
+}
+
+/*end of editing small orange bar for leftmost content*/
+
+
+.leftsection .content .social{
+    margin: 20px 0 0 0;
+}
+
+/**/
+.leftsection .content .social a{
+    padding: 0 5px;
+}
+
+.leftsection .content .social a span{
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 50px;
+    transition: 0.4s;
+    border:1px solid #656565;
+}
+
+.leftsection .content .social a span:hover{
+    background: #c90;
+}
+
+
+.center .content .fas{
+    font-size: 1.1rem;
+    background: transparent;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+    border:1px solid #656565;
+}
+
+.center .content .fas:hover{
+    background: #c90;
+    border:1px solid #c90;
+}
+
+.center .content .text{
+    font-size: 1.0.6rem;
+    font-weight: 500;
+    padding-left: 10px;
+    color: white;
+}
+
+.center .content .phone{
+    margin: 15px 0;
+}
+
+.footerbottom span{
+    text-align: center;
+   /* color: #656565;*/
+    color:white;
+}
+/*here end the CSS code for the footer*/
+
+hr{
+    height: 1px;
+    background-color: #c90;
+    border: none;
+}
+
+/*Here i am editing the 3 row for diplaying details afther the main content here*/
+/*this is the CSS for the columns*/
+@media (min-width: 200px) {
+    .columns{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+        text-align: center;
+        grid-gap: 150px;
+    }
+}
+
+.columns{
+    font-weight: normal;
+    color: white;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.column{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+
+.column h2{
+    color: var(--main-color);
+}
+/*here is the end for editing the diplaying details after the main content*/
